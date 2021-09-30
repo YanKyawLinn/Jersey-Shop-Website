@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@300&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 95%;
+    font-family: 'Gemunu Libre', sans-serif;
+    margin: auto;
+}
+
+
+/* Start Header */
+
+header {
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5));
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /*  */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    /*  */
+    overflow: hidden;
+    /*  */
+    z-index: 1;
+}
+
+.carousel {
+    height: 100vh;
+}
+
+
+/* start navbar */
+
+.navbar {
+    width: 95%;
+    margin: auto;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+    padding: 15px 20px;
+    transition: all 0.7s;
+    z-index: 1;
+}
+
+.navmenus {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+    padding: 5px 20px;
+}
+
+.dropdown-menu {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+}
+
+.dropdown-menu .dropdown-item:hover {
+    background: linear-gradient(rgba(60, 183, 185, 0.5), rgba(0, 0, 0, 0.2));
+}
+
+.dropdown-menu .dropdown-item:active {
+    background: linear-gradient(rgba(60, 183, 185, 0.7), rgba(0, 0, 0, 0.2));
+}
+
+.dditems {
+    color: #fff;
+    font-size: 13px;
+    letter-spacing: 1px;
+    /*  */
+    transition: color 0.5s;
+}
+
+.dditems:hover {
+    color: #c9e610;
+}
+
+.lines1,
+.lines2,
+.lines3 {
+    width: 23px;
+    height: 3px;
+    margin: 5px;
+    /*  */
+    transition: all 0.4s;
+}
+
+.changes .lines1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.changes .lines2 {
+    opacity: 0;
+}
+
+.changes .lines3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+.input-group input {
+    /* color: #8622e3; */
+    /* background color change for fit */
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #8f0613;
+}
+
+input[type="text"]:focus {
+    /* border: none; */
+    background: transparent;
+    outline: none;
+    box-shadow: none;
+    border-bottom: 1px solid #0abbcf;
+}
+
+.input-group .input-group-text {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    /*  */
+    transition: 0.2s ease-in-out;
+}
+
+.input-group input[type="text"]::placeholder {
+    color: #0dc1d9;
+}
+
+
+/* start banner*/
+
+.banners {
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 58%;
+    transform: translate(-50%, -58%);
+    z-index: 1;
+}
+
+.banner-headers {
+    animation-name: aniones;
+    animation-duration: 2s;
+}
+
+.banner-paragraphs {
+    animation-name: aniones;
+    animation-duration: 2s;
+    animation-delay: 0.3s;
+    /*  */
+    animation-fill-mode: backwards;
+}
+
+@keyframes aniones {
+    0% {
+        transform: translate(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+/* end banner */
+
+
+/* End Header */
+
+
+/* For phone */
+
+@media (min-width:490px) {
+    header {
+        height: 100vh;
+    }
+    .carousel {
+        height: 100vh;
+    }
+    .carousel-item img {
+        height: 100vh;
+    }
+}
+
+
+/* start selling section */
+
+.whiteunderlines {
+    width: 300px;
+    border: 3px solid #aaa;
+    margin: auto;
+}
+
+.cards .card {
+    z-index: 0;
+}
